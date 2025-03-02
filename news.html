@@ -6,19 +6,19 @@
     <title>Document</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
-  <body class="h-auto bg-white">
+  <body class="h-auto bg-green-950">
     <nav
       class="h-[10%] bg-[#113b29] flex p-2 items-center justify-between pr-2"
     >
-      <a class="text-[40px] text-white" href="/news.html">News.</a>
+      <a class="text-[30px] text-white" href="/news.html">News.</a>
       <label for="" class="mr-3">
-        <input type="text" class="border-none p-[4px] bg-white rounded-[4px]" placeholder="Search" />
-        <button class="bg-white text-green-950 p-[4px] rounded-[4px]">Search</button>
+        <input type="text" class="border-none p-[5px] bg-white rounded-[4px] outline-none " id="input" placeholder="Search" />
+        <button class="bg-[#4bf68d] text-white p-[5px] rounded-[4px] hover:cursor-pointer hover:opacity-80 active:opacity-70 " id="search">Search</button>
       </label>
     </nav>
     <div class="h-[80%]">
       <div
-        class="grid md:grid-cols-4 sm:grid-cols-4 grid-cols-1 gap-3 px-2 pt-1"
+        class="grid md:grid-cols-4 sm:grid-cols-4 grid-cols-1 gap-3 px-2 pt-1" id="blogContainer"
       >
         <div class="bg-[#ffffff25] h-[350px] border-2 rounded-[6px] grid grid-rows-3">
           <div class="row-span-2 bg-white"></div>
@@ -110,6 +110,7 @@
         </div>
       </div>
     </div>
-    <footer></footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
